@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bitcoin-wallet-angular';
+  user={name:'mario', email:'mariogames@gmail.com'}
 }

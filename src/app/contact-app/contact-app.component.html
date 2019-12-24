@@ -1,0 +1,8 @@
+
+<app-contact-preview 
+    class="prev-container"
+    *ngFor="let contact of contacts" 
+    [contact]="contact" 
+    routerLink="/contact/{{contact.name}}"
+>
+</app-contact-preview>
