@@ -1,1 +1,45 @@
-<p>contact-details works!</p>
+<!-- <mat-card *ngIf="contact" class="details-container">
+    <h2>Contact details</h2>
+    <img class="user-avatar" src="../../assets/user-avatar.jpg" alt="">
+    <p>name: {{contact.name | uppercase}}</p>
+    <p>email: {{contact.email | uppercase}}</p>
+    <div *ngIf="isEdit">
+        <label>name:
+            <input [(ngModel)]="contact.name" placeholder="name" />
+        </label>
+    </div>
+    <button class="btn" mat-raised-button color="basic" (click)="onEdit()">Edit</button>
+    <button mat-raised-button color="basic" (click)="goBack()">go back</button>
+    <button mat-raised-button color="basic" (click)="save()">save</button>
+
+    <a routerLink="/contact/{{contact.id+1}}">
+        NEXT HERO
+    </a>
+
+</mat-card> -->
+
+<mat-card *ngIf="contact" class="details-container example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{contact.name}}</mat-card-title>
+        <mat-card-subtitle>{{contact.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/user-avatar.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+        </p>
+    </mat-card-content>
+    <div *ngIf="isEdit">
+        <label>name:
+            <input [(ngModel)]="contact.name" placeholder="name"/>
+        </label>
+    </div>
+    <mat-card-actions>
+        <button class="btn" mat-raised-button  (click)="onEdit()">Edit</button>
+        <button class="btn" mat-raised-button  (click)="save()">save</button>
+        <button class="btn" mat-raised-button  (click)="goBack()">go back</button>
+    </mat-card-actions>
+</mat-card>

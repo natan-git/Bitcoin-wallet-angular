@@ -1,3 +1,40 @@
-.prev-container{
-    margin: 1rem;
+.contacts-container{
+    h1{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
 }
+
+.prev-container{
+    margin: 2rem;
+}
+
+.btn{
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+    margin: 0.5rem;
+    background-color: rgb(29, 175, 172);
+}
+
+.add-contact{
+    width: 50%;
+    margin: auto;
+}
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .example-header-image {
+    background-image: url('../../assets/user-avatar.jpg');
+    background-size: cover;
+  }

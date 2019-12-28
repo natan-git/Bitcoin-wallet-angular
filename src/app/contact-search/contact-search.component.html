@@ -1,0 +1,14 @@
+<div class="search-container flex col justify-center align-center">
+        <!-- <h4><label for="search-box">Contact Search</label></h4> -->
+        <mat-form-field > 
+            <input #searchBox matInput id="search-box" (input)="search(searchBox.value)" placeholder="Search" />
+        </mat-form-field>
+        <ul class="search-result">
+            <li *ngFor="let contact of contacts$ | async">
+                <a routerLink="/contact/{{contact.id}}">
+                    {{contact.name}}
+                </a>
+            </li>
+        </ul>
+    
+</div>

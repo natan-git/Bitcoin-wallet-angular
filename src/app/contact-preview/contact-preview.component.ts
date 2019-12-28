@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Contact } from '../contact'
 
 @Component({
   selector: 'app-contact-preview',
@@ -7,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContactPreviewComponent implements OnInit {
   @Input() contact;
+  private contacts:Contact[];
   constructor() { }
 
   ngOnInit() {
   }
+  
+
 
 }

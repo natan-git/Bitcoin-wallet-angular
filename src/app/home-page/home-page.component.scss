@@ -1,0 +1,33 @@
+.main-container{
+  margin-top: 2rem;
+  .bitcoin-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+
+  .signup-container{
+      padding: 2rem;
+      width: 30%;
+      height: 20%;
+      background-color: white;
+      border-radius: 5px;
+      margin-top: 4rem;
+      h2{
+          margin: 0;
+      }
+      .signup-form {
+          margin-top: 1rem;
+          min-width: 150px;
+          max-width: 500px;
+          width: 100%;
+
+          .input-container {
+            width: 100%;
+          }
+
+        }
+
+  }
+  
+}

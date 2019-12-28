@@ -1,1 +1,19 @@
-<p>home-page works!</p>
+<div class="main-container flex col justify-center align-center">
+    <div *ngIf="loggedInUser">
+        <h1>Welcome {{loggedInUser.name}}</h1>
+        <div class="flex align-center">
+            <img class="bitcoin-icon" src="../../assets/bitcoin-icon.png" alt="">
+            <p>{{loggedInUser.coins}} coins left</p>
+        </div>
+    </div>
+    <div class="signup-container flex col justify-center">
+        <div class="flex col align-start">
+            <img src="../../assets/bitcoin-pocket-or-wallet.png" alt="" style="max-height: 3rem; max-width: 3rem; margin-bottom:15px;">
+            <h2 style="margin-bottom:15px;">Sign up</h2>
+        </div>
+        <mat-form-field>
+            <input #elUserName matInput type="text" placeholder="Enter your name">
+        </mat-form-field>
+        <button mat-raised-button class="btn" (click)="addUser(elUserName.value)">Submit</button>        
+    </div>
+</div>

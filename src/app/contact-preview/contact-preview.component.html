@@ -1,2 +1,7 @@
 
-<mat-card >{{contact.name}}</mat-card>
+<mat-card >
+    <h3>{{contact.name}}</h3>
+    <button class="btn" mat-raised-button routerLink="/contact/{{contact.id}}" color="primary">Details</button>
+    <button class="btn" mat-raised-button color="primary">Delete</button>
+    <button class="btn" mat-raised-button color="primary">Edit</button>
+</mat-card>

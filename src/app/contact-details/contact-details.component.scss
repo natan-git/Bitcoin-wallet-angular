@@ -1,0 +1,21 @@
+.user-avatar{
+    width: 60%;
+    padding: 0.5rem;
+}
+
+.example-card {
+    max-width: 400px;
+    
+  }
+  
+  .example-header-image {
+    background-image: url('../../assets/user-avatar.jpg');
+    background-size: cover;
+  }
+  
+  .btn{
+      color: rgb(241, 241, 241);
+      font-weight: bold;
+      margin: 0.5rem;
+      background-color: rgb(29, 175, 172);
+  }
