@@ -21,6 +21,12 @@ import { ContactPreviewComponent } from './contact-preview/contact-preview.compo
 import { ContactSearchComponent } from './contact-search/contact-search.component';
 import { UserService } from './services/user.service';
 import { UtilService } from './services/util.service';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -31,6 +37,7 @@ import { UtilService } from './services/util.service';
     StatisticsComponent,
     ContactPreviewComponent,
     ContactSearchComponent,
+
     
   ],
   imports: [
@@ -43,7 +50,19 @@ import { UtilService } from './services/util.service';
 
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+
+    LayoutModule,
+
+    MatToolbarModule,
+
+    MatButtonModule,
+
+    MatSidenavModule,
+
+    MatIconModule,
+
+    MatListModule
 
   ],
   providers: [ContactService, UserService, UtilService],

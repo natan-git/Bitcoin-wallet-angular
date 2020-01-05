@@ -28,18 +28,7 @@ export class UtilService {
     return value;
   }
 
-//   showToast(txt, type) {
-//     const msg = Swal.mixin({
-//       toast: true,
-//       position: 'top-start',
-//       showConfirmButton: false,
-//       timer: 3000,
-//     })
-//     msg.fire({
-//       icon: type,
-//       title: txt
-//     })
-//   }
+
 
 }
 

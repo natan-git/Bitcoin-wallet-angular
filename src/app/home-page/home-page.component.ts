@@ -6,15 +6,16 @@ import { UserService } from '../services/user.service'
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  userName=''
-  loggedInUser=''
+  name : string[];
+  loggedInUser;
   constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.loggedInUser=this.userService.getUser()
     console.log('this.loggedInUser',this.loggedInUser);
+    console.log('this.loggedInUser',this.loggedInUser.name);
   }
-
+  
   addUser(event: Event) {
     // console.log(event);
     this.userService.signUp(event);

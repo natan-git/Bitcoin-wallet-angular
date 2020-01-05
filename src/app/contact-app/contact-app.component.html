@@ -20,7 +20,7 @@
             <div>
                 <button class="btn" mat-raised-button color="basic" routerLink="/contact/{{contact.id}}">Details</button>
                 <button class="btn" mat-raised-button color="basic" (click)="delete(contact)">Delete</button>
-                <button class="btn" mat-raised-button color="basic" (click)="move(contact)">Move</button> 
+                <button class="btn" mat-raised-button color="basic" (click)="move()">Move</button> 
             </div>
             <div *ngIf="isShowInput" class="add-contact flex align-center " >
                 <form class="example-form">

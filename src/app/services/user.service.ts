@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { UtilService } from './util.service'
+import { User } from '../user'
 
 @Injectable({
     providedIn: 'root'
 })
 export class UserService {
     constructor(private utilService: UtilService) {}
-
+    
     gUsers = this._createUsers()
+    
 
     _createUsers() {
         var users = this.utilService.loadFromStorage('users')
@@ -15,7 +17,7 @@ export class UserService {
             users = [
                 {
                     _id: this.utilService.makeId(),
-                    name: "Lewis Hamilton ",
+                    name: "Lewis Hamilton",
                     coins: 100,
                     moves: []
                 },
@@ -64,7 +66,7 @@ export class UserService {
             loggedInUser = this.gUsers[0]
             this.utilService.saveToStorage('loggedInUser', loggedInUser)
         }
-        return loggedInUser
+        return loggedInUser 
     }
 
     signUp(name) {

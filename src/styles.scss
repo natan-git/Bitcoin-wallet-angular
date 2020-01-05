@@ -3,14 +3,24 @@
 
 // $primary: rgb(111, 0, 255);
 $primary: rgb(29, 175, 172);
+ html{
+     height: 100%;
+ }
 
 body {
+    height: 100%;
     margin: 0;
     font-family:  Helvetica, sans-serif;
     font-size: 20px;
     background-color: rgb(228, 228, 228);
 }
+.nav-bar-container{
+    height: 100%;
 
+}
+app-container{
+    width: 100%;
+}
 .container {
     width: 80%;
     margin: 0 auto;

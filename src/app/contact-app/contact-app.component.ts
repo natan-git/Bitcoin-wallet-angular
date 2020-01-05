@@ -8,10 +8,10 @@ import { Contact } from '../contact'
   styleUrls: ['./contact-app.component.scss']
 })
 export class ContactAppComponent implements OnInit {
-  private contacts:Contact[];
+  public contacts:Contact[];
   amount='10';
   isShowInput=false;
-  constructor(private contactService:ContactService,private userService:UserService) { }
+  constructor(public contactService:ContactService, public userService:UserService) { }
 
   ngOnInit() {
     this.getContacts();
